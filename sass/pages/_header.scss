@@ -1,0 +1,91 @@
+header {
+  background-color: $gray-color;
+  height: 70px;
+  .logo {
+    background-color: $dark-color;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+    @media (max-width: $screen-sm) {
+      font-size {
+
+      }
+    }
+    h2 {
+      @media (max-width: $screen-sm) {
+        font-size: 40px;
+      }
+      a {
+        color: $light-color;
+      }
+    }
+  }
+  .collapse.navbar-collapse {
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      border: none;
+      background-color: $gray-color;
+      padding-bottom: 20px;
+    }
+    nav {
+      overflow: hidden;
+      @media (max-width: $screen-sm) {
+        width: 100%;
+      }
+    }
+    .nav-menu {
+      @media (max-width: $screen-sm) {
+        float: left!important;
+      }
+      ul {
+        padding-top: 25px;
+        @media (max-width: $screen-sm) {
+          float: left!important;
+        }
+        li {
+          padding: 0 20px;
+          font-size: 14px;
+          padding-bottom: 20px;
+          @media (max-width: $screen-sm) {
+            height: 45px;
+          }
+          &:last-of-type {
+            margin-right: 0;
+          }
+          &:hover {
+            border-bottom: 5px solid $main-color;
+          }
+          a {
+              color: $light-color;
+              font-family: 'Segoe UI';
+          }
+          @media (max-width: $screen-sm) {
+            float: none;
+            display: block;
+          }
+        }
+        li.active {
+          border-bottom: 5px solid $main-color;
+        }
+      }
+    }
+  }
+  .lang {
+    padding-top: 20px;
+    text-align: center;
+    height: 70px;
+    background-color: $light-gray;
+    @media (max-width: $screen-sm) {
+      float: left!important;
+      margin-left: 20px;
+    }
+  }
+  .navbar-toggle {
+    background-color: $dark-color;
+    .icon-bar {
+      background-color: $light-color;
+      height: 4px;
+      width: 30px;
+    }
+  }
+}

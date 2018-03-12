@@ -1,0 +1,163 @@
+/* Start Company Groups */
+.company-groups {
+  padding: 55px 0;
+  .title-head {
+    text-align: center;
+    margin-bottom: 55px;
+    h1 {
+      color: $main-color;
+      @media (max-width: $screen-sm) {
+        font-size: 50px;
+      }
+    }
+  }
+  .description {
+    p {
+      font-size: 17px;
+      color: rgba(155, 136, 77, 0.5);
+    }
+  }
+  #carousel-example-generic {
+    .carousel-control {
+      width: 10%!important;
+    }
+    .left.carousel-control, .right.carousel-control {
+      background-image: none!important;
+      span {
+        top: 40%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 80px;
+        width: 35px;
+        line-height:80px;
+        left: 10px;
+        font-size: 60px;
+        @media (max-width: $screen-sm) {
+          height: 45px;
+          width: 20px;
+          line-height:45px;
+          left: 19px;
+          font-size: 35px;
+        }
+      }
+    }
+    .carousel-control.right {
+      @media (max-width: $screen-sm) {
+        right: 25px;
+      }
+    }
+  }
+}
+/* End Company Groups */
+/* Start countries */
+.countries {
+  border-bottom: 25px solid $gray-color;
+  .flags {
+    ul {
+      border-top: 1px solid $gray-color;
+      overflow: hidden;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        padding: 5px 21px;
+        border-top: 2px solid transparent;
+        height: 95px;
+        text-align: center;
+        a {
+          color: $main-color;
+          font-size: 18px;
+          font-family: 'Segoe UI';
+          font-weight: bold;
+          span {
+            display: block;
+          }
+        }
+        @media (max-width: $screen-sm) {
+          width: 12%;
+          padding: 5px;
+          height: auto;
+          a {
+            font-size: 10px;
+          }
+          span {
+            display: none!important;
+          }
+        }
+      }
+      li.selected {
+        border-top: 2px solid $main-color;
+        background-color: $gray-border;
+      }
+    }
+  }
+  .countrie-desc {
+    background-color: $gray-border;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    .countrie {
+      display: none;
+      position: absolute;
+      padding-top: 60px;
+      top: 0px;
+      left: 0px;
+      .countrie-info {
+        margin-bottom: 125px;
+        overflow: hidden;
+      h2 {
+        color: $main-color;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 17px;
+        color: rgba(155, 136, 77, 0.5);
+      }
+      a {
+        display: block;
+        background-color: $main-color;
+        width: 225px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: $light-color;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-top: 53px;
+        @media (max-width: $screen-sm) {
+          margin-top: 10px;
+          margin-bottom:10px;
+        }
+        &:hover {
+          background-color: $light-color;
+          color: $main-color;
+        }
+      }
+      .countrie-img {
+        img {
+          width: 100%;
+          max-height: 375px;
+        }
+      }
+    }
+    .contact-us {
+      overflow: hidden;
+      h2 {
+        color: $main-color;
+        border-bottom: 2px solid $gray-color;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+      p {
+        color: $main-color;
+        font-size: 20px;
+        font-family: 'Calibri';
+      }
+    }
+  }
+  .countrie.active {
+    display: block;
+    position: relative;
+  }
+  }
+}
+/* End countries */
